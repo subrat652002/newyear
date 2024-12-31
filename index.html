@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Card</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Happy New Year Card</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button id="generateCard">Generate Card</button>
+        <div id="card" class="card hidden">
+            <div class="card-inner">
+                <div class="card-page page-front">
+                    <h2>Happy New Year!</h2>
+                    <p>Click to open your message!</p>
+                    <div class="signature"><i>~Subrat</i></div>
+                </div>
+                <div class="card-page page-back">
+                    <h2>Happy New Year,<br> <span id="userName"></span>!</h2>
+                    <p>Wishing you a joyful New Year filled with prosperity, good health, and countless moments of happiness. May 2025 bring you success and fulfillment in all your endeavors. Cheers to new beginnings!🥳🎉</p><br>
+                    <div class="signature"><i>~Subrat</i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card {
+    perspective: 1000px;
+    margin-top: 20px;
+	left:60px;
+}
+
+.card-inner {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-page {
+   position: absolute;
+    width: fit-content;
+    height: fit-content;
+    backface-visibility: hidden;
+	left:60px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-front {
+    background: linear-gradient(135deg, #4CAF50, #3e8e41);
+    color: white;
+	left:60px;
+
+}
+
+.page-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+	left:60px;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+	left:60px;
+
+}
+
+.signature {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
